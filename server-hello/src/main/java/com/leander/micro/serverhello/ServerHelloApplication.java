@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @SpringBootApplication
 @RestController
-public class ServerHelloApplication {
+public class ServerHelloApplication
+{
 
     public static void main(String[] args)
     {
@@ -24,7 +25,7 @@ public class ServerHelloApplication {
     @RequestMapping("/hi")
     public String home()
     {
-        return "Hello world";
+        return "Hello world, my port is " + port;
     }
 
     @GetMapping("/test/info")
